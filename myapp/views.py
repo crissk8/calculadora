@@ -23,7 +23,7 @@ def home(request):
         num1 = request.POST['num1']
         num2 = request.POST['num2']
         if 'sum' in request.POST:
-            result = Suma(num1,num2)
+            result = suma(num1,num2)
             return render(request,'index.html',{'result':result})
 
         if 'res' in request.POST:
